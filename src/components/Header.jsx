@@ -8,8 +8,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-white">
-            sidebot<span className="text-secondary">.ai</span>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
+              alt="Sidebot AI Logo" 
+              className="w-12 h-12"
+            />
+            <div className="text-2xl font-bold">
+              <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> <span className="text-white">Labs</span>
+            </div>
           </div>
           
           <nav className="hidden md:flex space-x-8">

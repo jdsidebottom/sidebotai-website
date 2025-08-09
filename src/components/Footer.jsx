@@ -8,9 +8,13 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Code size={32} className="text-primary" />
-              <span className="text-2xl font-bold text-white">
-                sidebot<span className="text-secondary">.ai</span>
+              <img 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
+                alt="Sidebot AI Logo" 
+                className="w-12 h-12"
+              />
+              <span className="text-2xl font-bold">
+                <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> <span className="text-white">Labs</span>
               </span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">

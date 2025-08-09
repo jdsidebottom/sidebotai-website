@@ -8,7 +8,11 @@ const Hero = () => {
         <div className="glass rounded-3xl p-8 md:p-12 glass-hover animate-float">
           <div className="flex justify-center mb-6">
             <div className="relative">
-              <Code size={80} className="text-primary animate-glow" />
+              <img 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
+                alt="Sidebot AI Logo" 
+                className="w-30 h-30 animate-glow"
+              />
               <Sparkles size={24} className="absolute -top-2 -right-2 text-secondary animate-pulse" />
             </div>
           </div>
@@ -19,7 +23,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-4xl mx-auto">
-            Sidebot AI Labs develops innovative software applications and provides expert consulting 
+            <span className="text-secondary">Side</span><span className="text-white/80">bot</span> <span className="text-secondary">AI</span> <span className="text-white/80">Labs</span> develops innovative software applications and provides expert consulting 
             services to help businesses and entrepreneurs bring their ideas to life through custom AI solutions.
           </p>
           
