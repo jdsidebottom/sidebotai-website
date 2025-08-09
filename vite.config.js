@@ -3,27 +3,34 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    host: true,
-    port: 5173,
-    strictPort: false,
-    hmr: {
-      port: 5173
-    }
+  base: './',
+  define: {
+    global: 'globalThis',
+    'process.env': {}
   },
   build: {
-    target: 'esnext',
-    minify: 'terser',
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    minify: 'esbuild',
+    target: 'es2015',
     rollupOptions: {
       output: {
-        manualChunks: undefined
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          icons: ['lucide-react']
+        }
       }
     }
   },
-  optimizeDeps: {
-    exclude: ['lucide-react']
+  server: {
+    host: true,
+    port: 5173
   },
-  esbuild: {
-    target: 'esnext'
+  preview: {
+    port: 4173
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'lucide-react']
   }
 })
