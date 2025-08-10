@@ -15,7 +15,7 @@ const Header = () => {
               className="w-12 h-12"
             />
             <div className="text-2xl font-bold">
-              <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> <span className="text-white">Labs</span>
+              <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
             </div>
           </div>
           

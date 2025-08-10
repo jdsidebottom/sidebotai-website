@@ -14,7 +14,7 @@ const Footer = () => {
                 className="w-12 h-12"
               />
               <span className="text-2xl font-bold">
-                <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> <span className="text-white">Labs</span>
+                <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
               </span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
