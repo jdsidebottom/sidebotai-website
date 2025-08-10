@@ -11,7 +11,8 @@ const Hero = () => {
               <img 
                 src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
                 alt="Sidebot AI Logo" 
-                className="w-20 h-20 animate-glow"
+                className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] animate-glow"
+
               />
               <Sparkles size={24} className="absolute -top-2 -right-2 text-secondary animate-pulse" />
             </div>
