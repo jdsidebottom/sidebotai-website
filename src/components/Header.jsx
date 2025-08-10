@@ -12,7 +12,7 @@ const Header = () => {
             <img 
               src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/SidebotaiLogoIcon.png" 
               alt="Sidebot AI Logo" 
-              className="w-15 h-15"
+              className="w-[50px] h-[50px] md:w-[25px] md:h-[25px]"
             />
             <div className="text-2xl font-bold">
               <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
