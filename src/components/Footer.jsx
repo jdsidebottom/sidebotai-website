@@ -11,7 +11,7 @@ const Footer = () => {
               <img 
                 src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/SidebotaiLogoIcon.png" 
                 alt="Sidebot AI Logo" 
-                className="w-12 h-12"
+                className="w-15 h-15"
               />
               <span className="text-2xl font-bold">
                 <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
