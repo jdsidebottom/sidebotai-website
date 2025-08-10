@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-1 mb-4">
+            <div className="flex items-center space-x-0 mb-4">
               <img 
                 src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/SidebotaiLogoIcon.png" 
                 alt="Sidebot AI Logo" 
