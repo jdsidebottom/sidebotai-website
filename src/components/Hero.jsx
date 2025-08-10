@@ -9,9 +9,9 @@ const Hero = () => {
           <div className="flex justify-center mb-6">
             <div className="relative">
               <img 
-                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
                 alt="Sidebot AI Logo" 
-                className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] animate-glow"
+                className="w-[25px] h-[250px] md:w-[120px] md:h-[120px] animate-glow"
 
               />
               <Sparkles size={24} className="absolute -top-2 -right-2 text-secondary animate-pulse" />

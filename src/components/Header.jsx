@@ -10,7 +10,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-0">
             <img 
-              src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/OrangeLogoTrans.png" 
+              src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
               alt="Sidebot AI Logo" 
               className="w-[150px] h-[150px] md:w-[50px] md:h-[50px]"
             />

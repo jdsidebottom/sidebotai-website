@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-0 mb-4">
               <img 
-                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/SidebotaiLogoIcon.png" 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
                 alt="Sidebot AI Logo" 
-                className="w-15 h-15"
+                className="w-[150px] h-[150px] md:w-[50px] md:h-[50px]"
               />
               <span className="text-2xl font-bold">
                 <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
