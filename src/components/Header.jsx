@@ -10,11 +10,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-0">
             <img 
-              src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/BlackLogoTrans.png" 
+              src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/OrangeLogoTrans.png" 
               alt="Sidebot AI Logo" 
-              className="w-[180px] h-[180px] md:w-[100px] md:h-[100px]"
+              className="w-[150px] h-[150px] md:w-[50px] md:h-[50px]"
             />
-            <div className="text-2xl font-bold">
+            <div className="text-3xl font-bold">
               <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
             </div>
           </div>
