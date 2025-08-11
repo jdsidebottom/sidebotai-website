@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const TermsOfService = () => {
+  useEffect(() => {
+    // Scroll to top with a slight delay to ensure the component is rendered
+    // and account for the fixed header
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, 100)
+  }, [])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 pt-32 pb-12">
         <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-sm rounded-lg p-8">
           <h1 className="text-4xl font-bold text-white mb-8">Terms of Service</h1>
           
@@ -12,96 +20,103 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Acceptance of Terms</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Explain that by using your services, users agree to these terms. 
-                  Include information about who can use your services (age restrictions, etc.).]
+                  By accessing or using the services provided by Sidebot AI Labs, LLC (“we,” “our,” or “us”), you agree to be bound by these Terms of Service and our Privacy Policy. 
+                  If you do not agree to these terms, you may not use our services. You must be at least 18 years of age, or the legal age of majority in your jurisdiction, to use our services.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Description of Services</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Describe the services you provide, including custom development, 
-                  AI solutions, consulting, and prototyping services.]
+                  We provide custom software development, AI-powered solutions, consulting, and prototyping services. 
+                  Services may include, but are not limited to, design, coding, deployment, optimization, and integration of AI-based applications, as well as business consulting related to technology and automation.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">User Responsibilities</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Outline what users are responsible for when using your services, 
-                  including providing accurate information, complying with laws, etc.]
+                  You agree to provide accurate, current, and complete information when using our services. 
+                  You are responsible for your own actions and for complying with all applicable local, state, national, and international laws and regulations.
+                  You are responsible for ensuring you have the necessary rights to any data or materials you provide to us.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Prohibited Uses</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: List activities that are not allowed when using your services, 
-                  such as illegal activities, harassment, spam, etc.]
+                  You may not use our services for any unlawful, abusive, or fraudulent purpose, including but not limited to:
+                  engaging in illegal activities, transmitting harmful code, harassing others, sending unsolicited spam, or infringing on intellectual property rights. 
+                  We reserve the right to suspend or terminate accounts that violate these rules.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Intellectual Property</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Explain ownership of intellectual property, including your content, 
-                  user-generated content, and work products from consulting services.]
+                  All content, trademarks, designs, code, and other intellectual property created by us remain our property unless otherwise agreed in writing.
+                  Any deliverables created under a contract will be subject to the ownership terms specified in that agreement. 
+                  You retain rights to your own content, but grant us a license to use it as needed to perform our services.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Payment Terms</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Include information about pricing, payment methods, refunds, 
-                  and billing for your consulting and development services.]
+                  All fees for our services will be outlined in a separate agreement or invoice. 
+                  Payments must be made in accordance with the payment schedule provided. 
+                  We accept payments via credit card, ACH, or other approved methods. 
+                  Unless otherwise stated, all payments are non-refundable once work has commenced, except as required by law.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Service Availability</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Explain that services may not always be available and you may 
-                  modify or discontinue services at any time.]
+                  We strive to provide continuous and reliable service, but we do not guarantee uninterrupted availability. 
+                  We may modify, suspend, or discontinue any aspect of the service at any time without prior notice.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Limitation of Liability</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Include disclaimers about your liability for damages, losses, 
-                  or issues that may arise from using your services.]
+                  To the maximum extent permitted by law, Sidebot AI Labs, LLC is not liable for any indirect, incidental, 
+                  special, or consequential damages arising out of or related to your use of our services. 
+                  Our total liability for any claim will not exceed the amount you paid for the service in question.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Indemnification</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Explain that users agree to indemnify you against claims 
-                  arising from their use of your services.]
+                  You agree to indemnify, defend, and hold harmless Sidebot AI Labs, LLC and its affiliates, employees, and contractors 
+                  from any claims, damages, liabilities, and expenses arising from your use of our services or violation of these Terms.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Termination</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Describe how either party can terminate the service relationship 
-                  and what happens upon termination.]
+                  Either party may terminate the service relationship at any time, with or without cause, upon written notice. 
+                  Upon termination, all outstanding fees become immediately due, and your right to use our services will cease.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Governing Law</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Specify which state/country laws govern these terms and where 
-                  disputes will be resolved. Since you're in Arizona, likely Arizona law.]
+                  These Terms of Service are governed by and construed in accordance with the laws of the State of Arizona, 
+                  without regard to its conflict of laws principles. Any disputes shall be resolved in the state or federal courts located in Maricopa County, Arizona.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">Changes to Terms</h2>
                 <p className="mb-4">
-                  [PLACEHOLDER: Explain how you will notify users of changes to these terms 
-                  and when changes become effective.]
+                  We may update these Terms of Service from time to time. 
+                  If we make material changes, we will notify you by posting the updated terms on our website and updating the “Last Updated” date. 
+                  Continued use of our services after such changes constitutes your acceptance of the new terms.
                 </p>
               </section>
 
@@ -120,7 +135,7 @@ const TermsOfService = () => {
 
               <section className="mt-8 pt-6 border-t border-white/20">
                 <p className="text-sm text-white/60">
-                  Last updated: [PLACEHOLDER: Insert date when terms of service were last updated]
+                  Last updated: August 10, 2025
                 </p>
               </section>
             </div>
