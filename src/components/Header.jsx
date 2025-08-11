@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 glass">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-0">
+          <Link to="/" className="flex items-center space-x-0">
             <img 
               src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
               alt="Sidebot AI Logo" 
@@ -18,10 +19,10 @@ const Header = () => {
             <div className="text-3xl font-bold">
               <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
             </div>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
+            <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
             <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
             <a href="#about" className="text-white hover:text-secondary transition-colors">About</a>
             <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
@@ -50,7 +51,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
+              <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
               <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
               <a href="#about" className="text-white hover:text-secondary transition-colors">About</a>
               <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
