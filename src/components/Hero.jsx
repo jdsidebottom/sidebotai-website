@@ -3,15 +3,15 @@ import { ArrowRight, Code, Sparkles } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-32">
       <div className="container mx-auto text-center">
         <div className="glass rounded-3xl p-8 md:p-12 glass-hover animate-float">
           <div className="flex justify-center mb-6">
             <div className="relative">
               <img 
-                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/Sidebot.aidkbkgrd.png" 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/BlueLogoTrans.png" 
                 alt="Sidebot AI Logo" 
-                className="w-[200px] h-[200px] md:w-[120px] md:h-[120px] animate-glow"
+                className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] animate-glow"
 
               />
               <Sparkles size={24} className="absolute -top-2 -right-2 text-secondary animate-pulse" />

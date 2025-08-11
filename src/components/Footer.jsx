@@ -7,14 +7,14 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-1 mb-4">
+            <div className="flex items-center space-x-0 mb-4">
               <img 
-                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/SidebotaiLogoIcon.png" 
+                src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
                 alt="Sidebot AI Logo" 
-                className="w-12 h-12"
+                className="w-[150px] h-[150px] md:w-[50px] md:h-[50px]"
               />
               <span className="text-2xl font-bold">
-                <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> <span className="text-white">Labs</span>
+                <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
               </span>
             </div>
             <p className="text-white/70 mb-6 max-w-md">
@@ -69,10 +69,20 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p className="text-white/60">
-            © 2024 Sidebot AI Labs, LLC. All rights reserved.
-          </p>
+        <div className="border-t border-white/10 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-white/60 mb-4 md:mb-0">
+              © 2024 Sidebot AI Labs, LLC. All rights reserved.
+            </p>
+            <div className="flex space-x-6">
+              <a href="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
+                Privacy Policy
+              </a>
+              <a href="/terms-of-service" className="text-white/60 hover:text-white transition-colors text-sm">
+                Terms of Service
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
