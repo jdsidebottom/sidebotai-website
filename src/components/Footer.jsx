@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Code, Twitter, Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react'
 
 const Footer = () => {
@@ -75,12 +76,12 @@ const Footer = () => {
               © 2024 Sidebot AI Labs, LLC. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <a href="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
+              <Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
                 Privacy Policy
-              </a>
-              <a href="/terms-of-service" className="text-white/60 hover:text-white transition-colors text-sm">
+              </Link>
+              <Link to="/terms-of-service" className="text-white/60 hover:text-white transition-colors text-sm">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
