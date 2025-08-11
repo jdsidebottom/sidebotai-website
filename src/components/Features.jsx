@@ -48,18 +48,30 @@ const Features = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="glass rounded-2xl p-8 glass-hover group cursor-pointer"
-            >
-              <div className="text-primary mb-4 group-hover:text-secondary transition-colors">
-                {feature.icon}
+          {features.map((feature, index) => {
+            const serviceIds = [
+              'custom-development',
+              'ai-solutions', 
+              'consulting',
+              'prototyping',
+              'scalable-architecture',
+              'innovation-focus'
+            ];
+            
+            return (
+              <div 
+                key={index}
+                id={serviceIds[index]}
+                className="glass rounded-2xl p-8 glass-hover group cursor-pointer"
+              >
+                <div className="text-primary mb-4 group-hover:text-secondary transition-colors">
+                  {feature.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
+                <p className="text-white/70 leading-relaxed">{feature.description}</p>
               </div>
-              <h3 className="text-xl font-bold text-white mb-4">{feature.title}</h3>
-              <p className="text-white/70 leading-relaxed">{feature.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

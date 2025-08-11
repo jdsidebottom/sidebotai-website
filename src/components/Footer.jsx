@@ -41,10 +41,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Custom Development</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">AI Solutions</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Consulting</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Prototyping</a></li>
+              <li><a href="/#custom-development" className="text-white/70 hover:text-white transition-colors">Custom Development</a></li>
+              <li><a href="/#ai-solutions" className="text-white/70 hover:text-white transition-colors">AI Solutions</a></li>
+              <li><a href="/#consulting" className="text-white/70 hover:text-white transition-colors">Consulting</a></li>
+              <li><a href="/#prototyping" className="text-white/70 hover:text-white transition-colors">Prototyping</a></li>
             </ul>
           </div>
           
