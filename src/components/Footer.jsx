@@ -61,7 +61,7 @@ const Footer = () => {
               <div className="flex items-start space-x-2 text-white/70">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <div className="text-sm">
-                  <div>Sidebot AI Labs, LLC</div>
+                  <div>Sidebot AI Labs LLC</div>
                   <div>3101 N. Central Ave, Ste 183 #6247</div>
                   <div>Phoenix, Arizona 85012</div>
                 </div>
@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 mb-4 md:mb-0">
-              © 2024 Sidebot AI Labs, LLC. All rights reserved.
+              © 2025 Sidebot AI Labs LLC. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
