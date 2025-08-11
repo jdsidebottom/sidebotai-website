@@ -3,7 +3,7 @@ import { ArrowRight, Code, Sparkles } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-6 pt-32">
       <div className="container mx-auto text-center">
         <div className="glass rounded-3xl p-8 md:p-12 glass-hover animate-float">
           <div className="flex justify-center mb-6">
