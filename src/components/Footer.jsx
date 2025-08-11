@@ -69,10 +69,20 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-white/10 mt-8 pt-8 text-center">
-          <p className="text-white/60">
-            © 2024 Sidebot AI Labs, LLC. All rights reserved.
-          </p>
+        <div className="border-t border-white/10 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-white/60 mb-4 md:mb-0">
+              © 2024 Sidebot AI Labs, LLC. All rights reserved.
+            </p>
+            <div className="flex space-x-6">
+              <a href="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
+                Privacy Policy
+              </a>
+              <a href="/terms-of-service" className="text-white/60 hover:text-white transition-colors text-sm">
+                Terms of Service
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
