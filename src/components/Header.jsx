@@ -53,7 +53,7 @@ const Header = () => {
             <nav className="flex flex-col space-y-4">
               <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
               <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
-              <a href="#about" className="text-white hover:text-secondary transition-colors">About</a>
+              <Link to="/about" className="text-white hover:text-secondary transition-colors">About</Link>
               <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
               <div className="flex flex-col space-y-2 pt-4 border-t border-white/20">
                 <a 

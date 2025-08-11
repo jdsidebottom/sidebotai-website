@@ -54,8 +54,8 @@ const Footer = () => {
               <div className="flex items-center space-x-2 text-white/70">
                 <Phone size={16} />
                 <div>
-                  <div>(844) 743-3268</div>
-                  <div className="text-sm">(844) SIDEBOT</div>
+                  <div>1 (844) 743-3268</div>
+                  <div className="text-sm">1 (844) SIDEBOT</div>
                 </div>
               </div>
               <div className="flex items-start space-x-2 text-white/70">
@@ -76,6 +76,9 @@ const Footer = () => {
               © 2025 Sidebot AI Labs LLC. All rights reserved.
             </p>
             <div className="flex space-x-6">
+              <Link to="/about" className="text-white/60 hover:text-white transition-colors text-sm">
+                About
+              </Link>
               <Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
                 Privacy Policy
               </Link>
