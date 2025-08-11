@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import About from './components/About'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
+import ScrollToTop from './components/ScrollToTop'
 
 // Home page component
 const HomePage = () => (
@@ -21,6 +22,7 @@ const HomePage = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen">
         <Header />
         <Routes>
