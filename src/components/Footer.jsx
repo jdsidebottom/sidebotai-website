@@ -41,10 +41,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Custom Development</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">AI Solutions</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Consulting</a></li>
-              <li><a href="#" className="text-white/70 hover:text-white transition-colors">Prototyping</a></li>
+              <li><a href="/#custom-development" className="text-white/70 hover:text-white transition-colors">Custom Development</a></li>
+              <li><a href="/#ai-solutions" className="text-white/70 hover:text-white transition-colors">AI Solutions</a></li>
+              <li><a href="/#consulting" className="text-white/70 hover:text-white transition-colors">Consulting</a></li>
+              <li><a href="/#prototyping" className="text-white/70 hover:text-white transition-colors">Prototyping</a></li>
             </ul>
           </div>
           
@@ -54,14 +54,14 @@ const Footer = () => {
               <div className="flex items-center space-x-2 text-white/70">
                 <Phone size={16} />
                 <div>
-                  <div>(844) 743-3268</div>
-                  <div className="text-sm">(844) SIDEBOT</div>
+                  <div className="text-sm">1 (844) 743-3268</div>
+                  <div className="text-sm">1 (844) SIDEBOT</div>
                 </div>
               </div>
               <div className="flex items-start space-x-2 text-white/70">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
                 <div className="text-sm">
-                  <div>Sidebot AI Labs, LLC</div>
+                  <div>Sidebot AI Labs LLC</div>
                   <div>3101 N. Central Ave, Ste 183 #6247</div>
                   <div>Phoenix, Arizona 85012</div>
                 </div>
@@ -73,9 +73,12 @@ const Footer = () => {
         <div className="border-t border-white/10 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-white/60 mb-4 md:mb-0">
-              © 2024 Sidebot AI Labs, LLC. All rights reserved.
+              © 2025 Sidebot AI Labs LLC. All rights reserved.
             </p>
             <div className="flex space-x-6">
+              <Link to="/about" className="text-white/60 hover:text-white transition-colors text-sm">
+                About
+              </Link>
               <Link to="/privacy-policy" className="text-white/60 hover:text-white transition-colors text-sm">
                 Privacy Policy
               </Link>

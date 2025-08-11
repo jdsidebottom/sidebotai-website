@@ -5,8 +5,10 @@ import Hero from './components/Hero'
 import Features from './components/Features'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import About from './components/About'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import TermsOfService from './components/TermsOfService'
+import ScrollToTop from './components/ScrollToTop'
 
 // Home page component
 const HomePage = () => (
@@ -20,10 +22,12 @@ const HomePage = () => (
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-of-service" element={<TermsOfService />} />
         </Routes>

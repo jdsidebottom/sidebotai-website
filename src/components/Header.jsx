@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const Header = () => {
@@ -6,33 +7,33 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass">
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-0">
+          <Link to="/" className="flex items-center space-x-0">
             <img 
               src="https://rbhvcwzjvgatesivsxbb.supabase.co/storage/v1/object/public/assets/WhiteLogoTrans.png" 
               alt="Sidebot AI Logo" 
-              className="w-[50px] h-[50px] sm:w-[75px] sm:h-[75px] lg:w-[100px] lg:h-[100px]"
+              className="w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] lg:w-[60px] lg:h-[60px]"
             />
 
             <div className="text-3xl font-bold">
               <span className="text-secondary">Side</span><span className="text-white">bot</span> <span className="text-secondary">AI</span> 
             </div>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
+            <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
             <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
-            <a href="#about" className="text-white hover:text-secondary transition-colors">About</a>
+            <Link to="/about" className="text-white hover:text-secondary transition-colors">About</Link>
             <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
           </nav>
           
           <div className="hidden md:flex space-x-4">
             <a 
-              href="tel:8447433268"
+              href="tel:18447433268"
               className="px-4 py-2 text-white border border-white/30 rounded-lg glass-hover flex items-center space-x-2"
             >
-              <span>(844) SIDEBOT</span>
+              <span>1 (844) SIDEBOT</span>
             </a>
             <button className="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition-colors">
               Get Quote
@@ -50,16 +51,16 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-white hover:text-secondary transition-colors">Home</a>
+              <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
               <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
-              <a href="#about" className="text-white hover:text-secondary transition-colors">About</a>
+              <Link to="/about" className="text-white hover:text-secondary transition-colors">About</Link>
               <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
               <div className="flex flex-col space-y-2 pt-4 border-t border-white/20">
                 <a 
-                  href="tel:8447433268"
+                  href="tel:18447433268"
                   className="px-4 py-2 text-white border border-white/30 rounded-lg glass-hover text-center"
                 >
-                  (844) SIDEBOT
+                  1 (844) SIDEBOT
                 </a>
                 <button className="px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/80 transition-colors">
                   Get Quote
