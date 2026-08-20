@@ -3,7 +3,7 @@ import { ArrowRight, Phone } from 'lucide-react'
 
 const CTA = () => {
   return (
-    <section className="py-20 px-6">
+    <section id="contact" className="py-20 px-6">
       <div className="container mx-auto">
         <div className="glass rounded-3xl p-8 md:p-16 text-center glass-hover">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">

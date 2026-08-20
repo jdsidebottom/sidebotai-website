@@ -23,9 +23,9 @@ const Header = () => {
           
           <nav className="hidden md:flex space-x-8">
             <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
-            <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
+            <Link to="/#features" className="text-white hover:text-secondary transition-colors">Services</Link>
             <Link to="/about" className="text-white hover:text-secondary transition-colors">About</Link>
-            <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
+            <Link to="/#contact" className="text-white hover:text-secondary transition-colors">Contact</Link>
           </nav>
           
           <div className="hidden md:flex space-x-4">
@@ -51,14 +51,14 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 glass rounded-lg p-4">
             <nav className="flex flex-col space-y-4">
-              <Link to="/" className="text-white hover:text-secondary transition-colors">Home</Link>
-              <a href="#features" className="text-white hover:text-secondary transition-colors">Services</a>
-              <Link to="/about" className="text-white hover:text-secondary transition-colors">About</Link>
-              <a href="#contact" className="text-white hover:text-secondary transition-colors">Contact</a>
+              <Link to="/" className="text-white hover:text-secondary transition-colors" onClick={() => setIsMenuOpen(false)}>Home</Link>
+              <Link to="/#features" className="text-white hover:text-secondary transition-colors" onClick={() => setIsMenuOpen(false)}>Services</Link>
+              <Link to="/about" className="text-white hover:text-secondary transition-colors" onClick={() => setIsMenuOpen(false)}>About</Link>
+              <Link to="/#contact" className="text-white hover:text-secondary transition-colors" onClick={() => setIsMenuOpen(false)}>Contact</Link>
               <div className="flex flex-col space-y-2 pt-4 border-t border-white/20">
                 <a 
                   href="tel:18447433268"
-                  className="px-4 py-2 text-white border border-white/30 rounded-lg glass-hover text-center"
+                  className="px-4 py-2 text-white border border-white/30 rounded-lg glass-hover text-center" onClick={() => setIsMenuOpen(false)}
                 >
                   1 (844) SIDEBOT
                 </a>
